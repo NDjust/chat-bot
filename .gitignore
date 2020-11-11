@@ -156,6 +156,9 @@ dmypy.json
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
+# db config
+./crawler/db_config.json
+
 # Package Files #
 *.jar
 *.war
