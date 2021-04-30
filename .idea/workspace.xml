@@ -3,6 +3,63 @@
   <component name="ChangeListManager">
     <list default="true" id="e60c1d3d-b92f-44ad-b2e8-b1e5e3fc6509" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/capstone-chatbot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/capstone-chatbot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crawler/db_processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/crawler/db_processor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data/jamo_data.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/data/jamo_data.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data/jamo_plain.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/data/jamo_plain.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data/jamo_toxic" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/data/jamo_toxic" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data/jamo_toxic.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/data/jamo_toxic.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data/jamo_x.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/data/jamo_x.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data/rt-polaritydata/rt-polarity.neg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data/rt-polaritydata/rt-polarity.pos" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data/title_plain.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/data/title_plain.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data/title_total.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/data/title_total.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data/title_toxic.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/data/title_toxic.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/data_helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/data_helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/eval.py" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/eval.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/text_cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/text_cnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/train.py" beforeDir="false" afterPath="$PROJECT_DIR$/modeling/train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/cnn-text-classification-tf-master/train_jamo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/ko_test.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/ko_test_label.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/ko_toxic_all.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/ko_train_label.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/naver_shopping.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/ratings_test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/ratings_train.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/steam.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/비속어 목록 및 분류 지침/분류 지침 V 5.0.hwp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/비속어 목록 및 분류 지침/사용 전에 읽어주세요.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/비속어 목록 및 분류 지침/전체 목록 통합(지침 4.0 기준).xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/비속어_라벨링/KETI_대화데이터_응급상황.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/비속어_라벨링/KETI_대화데이터_응급상황_비속어라벨.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/비속어_라벨링/KETI_대화데이터_일상_오피스.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/비속어_라벨링/KETI_대화데이터_일상_오피스_비속어라벨.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/비속어_라벨링/SelvasAI_대화데이터_일상.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/data/비속어_라벨링/SelvasAI_대화데이터_일상_비속어라벨.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/dc_data_tokenize.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/load_data_by_pyspark.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/review_data_modeling.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/sentiment_data_collection.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/cnn_models/char_cnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/cnn_models/vd_cnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/cnn_models/word_cnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/data_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/rnn_models/attention_rnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/rnn_models/rcnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/rnn_models/word_rnn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text-classification-models-tf/train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/text_classification_cnn.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_preprocess/tokenize_data.ipynb" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +75,21 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/modeling" />
+      <recent name="$PROJECT_DIR$/data_preprocess" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/data_preprocess/data" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -32,6 +103,127 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Python.load_model">
+    <configuration name="data_load" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="capstone-chatbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_preprocess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preprocess/load_abuse_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dc_cralwer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="capstone-chatbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/crawler" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawler/dc_cralwer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dc_data_tokenize" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="capstone-chatbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_preprocess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preprocess/dc_data_tokenize.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="load_dc_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="capstone-chatbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_preprocess" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_preprocess/load_dc_data_in_db.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="load_model" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="capstone-chatbot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/api" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/api/load_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.load_model" />
+        <item itemvalue="Python.data_load" />
+        <item itemvalue="Python.dc_data_tokenize" />
+        <item itemvalue="Python.load_dc_data" />
+        <item itemvalue="Python.dc_cralwer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -42,7 +234,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604669970998</updated>
-      <workItem from="1604669972411" duration="208000" />
+      <workItem from="1604669972411" duration="283000" />
+      <workItem from="1604670363345" duration="3000" />
+      <workItem from="1604894687483" duration="47000" />
+      <workItem from="1604901886551" duration="3633000" />
+      <workItem from="1604985128981" duration="672000" />
+      <workItem from="1605067469761" duration="5715000" />
+      <workItem from="1605083071280" duration="2172000" />
+      <workItem from="1605090729965" duration="1307000" />
+      <workItem from="1605154173063" duration="13000" />
+      <workItem from="1605159261772" duration="7261000" />
+      <workItem from="1605239710313" duration="55000" />
+      <workItem from="1605253372883" duration="2648000" />
+      <workItem from="1605331629047" duration="1971000" />
+      <workItem from="1605339309831" duration="2700000" />
+      <workItem from="1605499396068" duration="2083000" />
+      <workItem from="1605505122279" duration="410000" />
+      <workItem from="1605505994363" duration="1000" />
+      <workItem from="1605586672758" duration="951000" />
+      <workItem from="1605594063371" duration="54000" />
+      <workItem from="1605594275303" duration="3247000" />
+      <workItem from="1605608717738" duration="4000" />
+      <workItem from="1605674760241" duration="1617000" />
+      <workItem from="1606364606542" duration="72000" />
+      <workItem from="1606377738819" duration="1971000" />
+      <workItem from="1606462602826" duration="1220000" />
+      <workItem from="1606920481858" duration="25000" />
+      <workItem from="1607165913172" duration="371000" />
+      <workItem from="1608118085852" duration="703000" />
+      <workItem from="1608166214146" duration="9790000" />
+      <workItem from="1608249734927" duration="4443000" />
     </task>
     <servers />
   </component>
@@ -54,10 +275,20 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/capstone_chatbot$load_model.coverage" NAME="load_model Coverage Results" MODIFIED="1608252319045" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/api" />
+    <SUITE FILE_PATH="coverage/capstone_chatbot$data_load.coverage" NAME="data_load Coverage Results" MODIFIED="1608252130445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
+    <SUITE FILE_PATH="coverage/capstone_chatbot$load_dc_data.coverage" NAME="load_dc_data Coverage Results" MODIFIED="1605175018067" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
+    <SUITE FILE_PATH="coverage/capstone_chatbot$dc_data_tokenize.coverage" NAME="dc_data_tokenize Coverage Results" MODIFIED="1605175107922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/data_preprocess" />
+    <SUITE FILE_PATH="coverage/capstone_chatbot$dc_cralwer.coverage" NAME="dc_cralwer Coverage Results" MODIFIED="1605084696981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
+    <SUITE FILE_PATH="coverage/capstone_chatbot$db_processor.coverage" NAME="db_processor Coverage Results" MODIFIED="1605072002806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
   </component>
 </project>

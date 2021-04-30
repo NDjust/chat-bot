@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/hongnadan/PycharmProjects/capstone-chatbot/data_preprocess/cnn-text-classification-tf-master/runs/1608209905/checkpoints/model-100"
+all_model_checkpoint_paths: "/Users/hongnadan/PycharmProjects/capstone-chatbot/data_preprocess/cnn-text-classification-tf-master/runs/1608209905/checkpoints/model-100"

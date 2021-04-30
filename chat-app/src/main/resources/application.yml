@@ -1,0 +1,126 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://10.113.112.127:13306/chat_db?characterEncoding=UTF-8&serverTimezone=UTC
+    username: nathan
+    password: asd62351
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  security:
+    oauth2:
+      client:
+        registration:
+          # nathan OAuth
+          nathan:
+            registration-id: nathan
+            # server
+            client-id: cceb3251-8c99-4c21-a6b3-f881293e5b81
+            client-secret: edf11a82-c254-4cb6-a1f1-7a369ab5e624
+            # localhost
+#            client-id: 4a02cafc-4e20-45ad-917e-a412051e5a61
+#            client-secret: 38b8bd2e-92d9-4b3a-adb4-065fc80f5cdc
+            client-name: Nathan (Nathan)
+            # server
+            redirect-uri: http://10.113.106.112:8080/login/oauth2/code/nathan
+            # localhost
+#            redirect-uri: http://localhost:8080/login/oauth2/code/nathan
+            authorization-grant-type: authorization_code
+            use-current-uri: false
+            scope: name,email,phone
+            response_type: code
+          # Jeong-min OAuth
+          jeongmin:
+            registration-id: jeongmin
+            client-id: ztc0vk0601nUiryHj7EK9eyC0747za030d7PbeVUmR9Jp466Q3szhj5P12bg
+            client-secret: YOVR76bH94Jl5APvcFN2HBZfOwr4VWti70B9mIOLbcILm97S5l5l95SvtzBo
+            client-name: Nathan (jeongmin)
+            redirect-uri: http://10.113.106.112:8080/login/oauth2/code/jeongmin
+            authorization-grant-type: authorization_code
+            use-current-uri: false
+            scope: read
+            response_type: code
+          # WooJae OAuth
+          woojae:
+            registration-id: woojae
+            # Server
+            client-id: 7c03095a-ae7e-48c7-a6c8-b74601bd79cf
+            client-secret: 2caf8d40-3f93-4ab5-9a3e-e8bfa0570794
+            # localhost
+#            client-id: ed10aa02-3e09-47d9-81a9-3e3fa01f5d3e
+#            client-secret: 48817de2-7b35-4506-b7bd-c35490dfabbd
+            client-name: Nathan (woojae)
+            # server
+            redirect-uri: http://10.113.106.112:8080/login/oauth2/code/woojae
+            # localhost
+#            redirect-uri: http://localhost:8080/login/oauth2/code/woojae
+            authorization-grant-type: authorization_code
+            use-current-uri: false
+            scope: name,email,phone
+            response_type: code
+          daeun:
+            registration-id: daeun
+            # server
+            client-id: Chat App160179657735
+            client-secret: bd33225a16be2ac747e845c1ad77c64b72acb3cdf16275e28203de781fa31e86
+            # localhost
+#            client-id: ChatApp1601796767511
+#            client-secret: 3fbbdd021003ebb2379ac617bc1078a83980b406cb7fcb5b45a8839bc3cb4d5f
+            authorization-grant-type: authorization_code
+            # server
+            redirect-uri: http://10.113.106.112:8080/login/oauth2/code/daeun
+            # localhost
+            client-name: Nathan (Daeun)
+#            redirect-uri: http://localhost:8080/login/oauth2/code/daeun
+            use-current-uri: false
+            scope: id,name,email,phone
+            response_type: code
+
+        provider:
+          nathan:
+            authorization-uri: http://10.113.93.169:8080/oauth/authorize
+            token-uri: http://10.113.93.169:8080/oauth/token
+            user-info-uri: http://10.113.93.169:8080/api/user
+            user-name-attribute: id
+
+          jeongmin:
+            authorization-uri: http://10.113.98.87:8080/oauth/authorize
+            token-uri: http://10.113.98.87:8080/oauth/token
+            user-info-uri: http://10.113.98.87:8080/api/user
+            user-name-attribute: id
+
+          woojae:
+            authorization-uri: http://10.106.93.88:8090/oauth/authorize
+            token-uri: http://10.106.93.88:8090/oauth/token
+            user-info-uri: http://10.106.93.88:8090/api/profile
+            user-name-attribute: id
+          daeun:
+            authorization-uri: http://10.113.97.165:8082/auth/oauth/authorize
+            token-uri: http://10.113.97.165:8082/auth/oauth/token
+            user-info-uri: http://10.113.97.165:8082/auth/user/info
+            user-name-attribute: id
+
+app:
+  auth:
+    tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
+    # ex) tokenSecret: 926D96C90030DD58429D2751AC1BDBBC
+    tokenExpirationMsec: 864000000
+    # ex) tokenExpirationMsec: 864000000
+  oauth2:
+    authorizedRedirectUris:
+      - http://localhost:3000/oauth2/redirect
+
+mybatis:
+  type-aliases-package: me.nathan.oauthclient.model.dao
+  mapper-locations: mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+

@@ -1,0 +1,108 @@
+plugins {
+    id 'org.springframework.boot' version '2.3.3.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+
+    //querydsl 추가
+    id "com.ewerk.gradle.plugins.querydsl" version "1.0.10"
+    id 'java'
+}
+
+group = 'me.nathan'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+
+//    maven {
+//        url "http://repo.navercorp.com/maven2/"
+//    }
+//
+//    maven {
+//        url "http://repo.navercorp.com/m2-snapshot-repository/"
+//    }
+//
+//    maven {
+//        url "https://repo1.maven.org/maven2"
+//    }
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-websocket'
+    implementation 'org.springframework.boot:spring-boot-devtools'
+    implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+    implementation 'com.github.gavlyukovskiy:p6spy-spring-boot-starter:1.5.8'
+
+    // template engine
+    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.2'
+
+    //embedded-redis
+    implementation 'it.ozimov:embedded-redis:0.7.2'
+    implementation 'org.webjars.bower:bootstrap:4.3.1'
+    implementation 'org.webjars:sockjs-client:1.1.2'
+    implementation 'org.webjars:stomp-websocket:2.3.3-1'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'javax.xml.bind:jaxb-api'
+
+    // mybatis
+    compile group: 'org.mybatis.spring.boot', name: 'mybatis-spring-boot-starter', version: '2.1.1'
+
+    // FE Build
+//    compile group: 'com.naver.fever', name : 'my-chat-app', version: '1.0.4'
+
+    // template engine
+    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.2'
+
+    //querydsl 추가
+    implementation 'com.querydsl:querydsl-jpa'
+
+    // db
+    runtimeOnly 'mysql:mysql-connector-java'
+
+    compileOnly 'org.projectlombok:lombok'
+
+    // jwt
+    implementation 'com.auth0:java-jwt:3.10.3'
+    compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+
+    // json bind
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.11.0'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.11.2'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.11.2'
+
+    compile group: 'org.springframework.security', name: 'spring-security-jwt', version: '1.0.10.RELEASE'
+    compile group: 'org.springframework.security.oauth.boot', name: 'spring-security-oauth2-autoconfigure', version: '2.1.4.RELEASE'
+    compile 'org.springframework.kafka:spring-kafka:2.6.1'
+
+    annotationProcessor 'org.projectlombok:lombok'
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+    testImplementation 'org.springframework.security:spring-security-test'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+//querydsl 추가
+def querydslDir = "$buildDir/generated/querydsl"
+querydsl {
+    jpa = true
+    querydslSourcesDir = querydslDir
+}
+sourceSets {
+    main.java.srcDir querydslDir
+}
+configurations {
+    querydsl.extendsFrom compileClasspath }
+compileQuerydsl {
+    options.annotationProcessorPath = configurations.querydsl
+}
+//querydsl 추가 끝가

@@ -40,7 +40,6 @@ def db_config():
     import json
     with open("db_config.json") as js:
         json_data = json.load(js)
-        # TODO 병렬처리로 돌릴 것!
         host = json_data["host"]
         user = json_data["user"]
         password = json_data["password"]

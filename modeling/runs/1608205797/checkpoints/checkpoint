@@ -1,0 +1,6 @@
+model_checkpoint_path: "/Users/hongnadan/PycharmProjects/capstone-chatbot/data_preprocess/cnn-text-classification-tf-master/runs/1608205797/checkpoints/model-4100"
+all_model_checkpoint_paths: "/Users/hongnadan/PycharmProjects/capstone-chatbot/data_preprocess/cnn-text-classification-tf-master/runs/1608205797/checkpoints/model-3700"
+all_model_checkpoint_paths: "/Users/hongnadan/PycharmProjects/capstone-chatbot/data_preprocess/cnn-text-classification-tf-master/runs/1608205797/checkpoints/model-3800"
+all_model_checkpoint_paths: "/Users/hongnadan/PycharmProjects/capstone-chatbot/data_preprocess/cnn-text-classification-tf-master/runs/1608205797/checkpoints/model-3900"
+all_model_checkpoint_paths: "/Users/hongnadan/PycharmProjects/capstone-chatbot/data_preprocess/cnn-text-classification-tf-master/runs/1608205797/checkpoints/model-4000"
+all_model_checkpoint_paths: "/Users/hongnadan/PycharmProjects/capstone-chatbot/data_preprocess/cnn-text-classification-tf-master/runs/1608205797/checkpoints/model-4100"

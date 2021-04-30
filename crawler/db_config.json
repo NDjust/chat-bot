@@ -1,0 +1,9 @@
+{
+  "host": "0.0.0.0",
+  "user": "root",
+  "password": "",
+  "db": "capstone_pjt",
+  "port": 3306,
+  "table_name": "dc_data",
+  "columns": "[title, view_count, recommend_count]"
+}

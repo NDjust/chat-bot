@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="me.nathan.oauthclient.repository.UserChatsRepository">
+    <resultMap id="userChat" type="UserChatMapper">
+        <id property="id" column="chat_id"/>
+        <result property="name" column="chat_name"/>
+        <result property="image" column="chat_image"/>
+        <result property="type" column="chat_type"/>
+        <result property="lastMessage" column="last_message"/>
+        <result property="lastAt" column="last_at"/>
+        <result property="unreadCnt" column="unread_count"/>
+        <collection property="members" javaType="java.util.List" ofType="MemberMapper">
+            <result property="id" column="user_id"/>
+            <result property="name" column="user_name"/>
+            <result property="image" column="user_profile"/>
+            <result property="active" column="active"/>
+            <result property="lastOutAt" column="last_out_at"/>
+            <result property="lastEnterAt" column="last_enter_at"/>
+        </collection>
+
+    </resultMap>
+
+    <select id="getUserChats" resultType="UserChatMapper" parameterType="Long" resultMap="userChat">
+        SELECT c.id AS chat_id, c.name AS chat_name, c.image AS chat_image, c.type AS chat_type,
+        m1.content AS last_message, IFNULL(m1.created_at, p2.last_at) AS last_at, p2.last_at AS last_enter_at,
+        u.id AS user_id, u.name AS user_name, u.profile_image AS user_profile, p2.active as active, p2.last_out_at as last_out_at
+        FROM chat c
+            LEFT JOIN connected_chat cc ON c.id = cc.chat_id
+            LEFT JOIN participants p2 ON p2.chat_id = c.id
+            LEFT JOIN user u ON u.id = p2.user_id
+            LEFT JOIN message m1 ON m1.id = cc.last_message_id
+        WHERE
+            c.id IN (SELECT p.chat_id FROM participants p WHERE p.user_id = #{id} AND p.active = true)
+        ORDER BY
+            c.id DESC
+    </select>
+</mapper>

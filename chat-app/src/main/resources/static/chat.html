@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>STOMP Web Socket</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.js"></script>
+    <!-- SockJS, STOMP -->
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.5/sockjs.min.js"></script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+
+</head>
+<body>
+<div>
+    <form onsubmit="return sendMessage()">
+        Message: <input id="echoInput" type="text">
+        <input type="submit" value="Send"> <br>
+    </form>
+    <ul id="echoResult"></ul>
+    <br>
+</div>
+
+<script type="text/javascript">
+		var client = null;
+		var headers = {
+			Authorization :
+			"eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMDAyIiwiaWF0IjoxNjAwMjAzODU2LCJleHAiOjE2MDEwNjc4NTZ9.Ekpp6jb1QrDUD-22lJhLB11BCZWGy1FQki3aWjGNLpjUuPd2rrWn_MzqOKGNIChTVlZMURzZkiyvTxGHL6yiHw"
+		};
+
+		var sock = new SockJS("/ws/chat");
+		client = Stomp.over(sock);
+		client.connect(headers, function() {
+			client.subscribe("/sub/chat/rooms/422", stompSubscribe);
+		});
+
+		var stompSubscribe = function(response) {
+			var payload = JSON.parse(response.body);
+			console.log(payload);
+			var message = payload.chat;
+			console.log(message);
+			var list = `<li>[$chat.id}] : ${chat.lastMessage}  sentAt : ${message.members}  unreadCnt : ${message.unreadCnt}</li>`;
+			$("#echoResult").append(list);
+		}
+
+		var sendMessage = function() {
+			var value = $("#echoInput").val();
+			var message = {
+				chatId : 422,
+				type : "TEXT",
+				content : value
+			};
+			console.log(message);
+			client.send("/pub/chat/group/message", {}, JSON.stringify(message));
+			$("#echoInput").val("");
+
+			return false;
+		}
+	</script>
+</body>
+</html>
